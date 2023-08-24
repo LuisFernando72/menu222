@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="lib/jQuery3.js"></script>
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Punto Venta</title>
+  </head>
+
+  <body>
+    <!-- SIDEBAR -->
+    <section id="sidebar">
+      <a href="#" class="brand">
+        <img src="/img/logoTortuga.png" alt="" />
+        <span class="text">INVENTARIO</span>
+      </a>
+      <ul class="side-menu top">
+        <li class="active" title="Dashboard">
+          <a href="#">
+            <i class="bx bxs-dashboard"></i>
+            <span class="text">Dashboard</span>
+          </a>
+        </li>
+        <li class="opcion" title="Generales">
+          <a href="#">
+            <i class="bx bxs-doughnut-chart"></i>
+            Generales <b>▼</b>
+          </a>
+          <ul class="submenu">
+            <li title="Productos">
+              <a href="#">
+                <i class="bx bxs-doughnut-chart"></i>
+                <span class="text">Productos</span>
+              </a>
+            </li>
+            <li title="Existencias">
+              <a href="#">
+                <i class="bx bxs-doughnut-chart"></i>
+                <span class="text">Existencias</span>
+              </a>
+            </li>
+            <li title="Proveedores">
+              <a href="#">
+                <i class="bx bxs-doughnut-chart"></i>
+                <span class="text">Proveedores</span>
+              </a>
+            </li>
+            <li title="Responsables">
+              <a href="#">
+                <i class="bx bxs-doughnut-chart"></i>
+                <span class="text">Responsables</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="opcion" title="Entradas inventario">
+          <a href="#">
+            <i class="bx bx-book-bookmark"></i>
+            Entradas de inventario<b>▼</b>
+          </a>
+          <ul class="submenu">
+            <li title="Apertura">
+              <a href="#">
+                <i class="bx bx-book-bookmark"></i>
+                <span class="text">Aperturas</span>
+              </a>
+            </li>
+            <li title="Ordenes">
+              <a href="#">
+                <i class="bx bx-book-bookmark"></i>
+                <span class="text">Ordenes</span>
+              </a>
+            </li>
+            <li title="Notas">
+              <a href="#">
+                <i class="bx bx-book-bookmark"></i>
+                <span class="text">Notas</span>
+              </a>
+            </li>
+            <li title="Ajustes">
+              <a href="#">
+                <i class="bx bx-book-bookmark"></i>
+                <span class="text">Ajustes</span>
+              </a>
+            </li>
+            <li title="Devoluciones ventas">
+              <a href="#">
+                <i class="bx bx-book-bookmark"></i>
+                <span class="text">Devoluciones ventas</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li title="Facturas compras">
+          <a href="#">
+            <i class="bx bx-clipboard"></i>
+            <span class="text">Facturas de compras</span>
+          </a>
+        </li>
+
+        <li title="Recibos compras">
+          <a href="#">
+            <i class="bx bxs-file-doc"></i>
+            <span class="text">Recibos de compras</span>
+          </a>
+        </li>
+        <li class="opcion" title="Salidas inventario">
+          <a href="#">
+            <i class="bx bx-book-open"></i>
+            Salidas de inventario<b>▼</b>
+          </a>
+          <ul class="submenu">
+            <li title="Notas">
+              <a href="#">
+                <i class="bx bx-book-open"></i>
+                <span class="text">Notas</span>
+              </a>
+            </li>
+            <li title="Ajustes">
+              <a href="#">
+                <i class="bx bx-book-open"></i>
+                <span class="text">Ajustes</span>
+              </a>
+            </li>
+            <li title="Devoluciones Compras">
+              <a href="#">
+                <i class="bx bx-book-open"></i>
+                <span class="text">Devoluciones de compras </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li title="Consultas">
+          <a href="#">
+            <i class="bx bxs-message-dots"></i>
+            <span class="text">Consultas</span>
+          </a>
+        </li>
+        <li class="opcion" title="Reportes">
+          <a href="#">
+            <i class="bx bxs-report bx-flip-horizontal"></i>
+            Reportes<b>▼</b>
+          </a>
+
+          <ul class="submenu">
+            <li title="Movimientos">
+              <a href="#">
+                <i class="bx bxs-report bx-flip-horizontal"></i>
+                <span class="text">Movimientos</span>
+              </a>
+            </li>
+            <li class="opcion2" title="Existencias">
+              <a href="#">
+                <i class="bx bxs-message-dots"></i>
+                Existencias <b>▼</b>
+              </a>
+              <ul class="submenu2">
+                <li title="Documentos">
+                  <a href="#">
+                    <i class="bx bxs-message-dots"></i>
+                    <span class="text">Documentos</span>
+                  </a>
+                </li>
+                <li title="Kardex">
+                  <a href="#">
+                    <i class="bx bxs-message-dots"></i>
+                    <span class="text">Kardex</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li title="Utilitarios">
+          <a href="#">
+            <i class="bx bxs-calendar-minus"></i>
+            <span class="text">Utilitarios</span>
+          </a>
+        </li>
+
+        <li style="margin-top: 10px" title="Cerrar sesión">
+          <a href="#" class="logout">
+            <i class="bx bx-log-out-circle"></i>
+            <span class="text">Cerrar sesión</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- SIDEBAR -->
+
+    <!-- CONTENT -->
+    <section id="content">
+      <!-- NAVBAR -->
+      <nav>
+        <i class="bx bx-menu"></i>
+
+        <form action="#">
+          <div class="form-input">
+            <p>¡¡Bienvenido!! Luis Fernando Paxel Cojolón</p>
+          </div>
+        </form>
+        <input type="checkbox" id="switch-mode" hidden />
+        <label for="switch-mode" class="switch-mode"></label>
+
+        <a href="#" class="profile">
+          <img src="img/people.png" />
+        </a>
+      </nav>
+
+      <main>
+        <div class="head-title">
+          <div class="left">
+            <h1>Dashboard</h1>
+            <ul class="breadcrumb">
+              <li>
+                <a href="#">Dashboard</a>
+              </li>
+              <li><i class="bx bx-chevron-right"></i></li>
+              <li>
+                <a class="active" href="#">Home</a>
+              </li>
+            </ul>
+          </div>
+          <a href="#" class="btn-download">
+            <i class="bx bxs-cloud-download"></i>
+            <span class="text">Download PDF</span>
+          </a>
+        </div>
+
+        <ul class="box-info">
+          <li>
+            <i class="bx bxs-calendar-check"></i>
+            <span class="text">
+              <h3>1020</h3>
+              <p>New Order</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-group"></i>
+            <span class="text">
+              <h3>2834</h3>
+              <p>Visitors</p>
+            </span>
+          </li>
+          <li>
+            <i class="bx bxs-dollar-circle"></i>
+            <span class="text">
+              <h3>$2543</h3>
+              <p>Total Sales</p>
+            </span>
+          </li>
+        </ul>
+
+        <div class="table-data">
+          <div class="order">
+            <div class="head">
+              <h3>Recent Orders</h3>
+              <i class="bx bx-search"></i>
+              <i class="bx bx-filter"></i>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>User</th>
+                  <th>Date Order</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <img src="img/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>01-10-2021</td>
+                  <td><span class="status completed">Completed</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="img/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>01-10-2021</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="img/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>01-10-2021</td>
+                  <td><span class="status process">Process</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="img/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>01-10-2021</td>
+                  <td><span class="status pending">Pending</span></td>
+                </tr>
+                <tr>
+                  <td>
+                    <img src="img/people.png" />
+                    <p>John Doe</p>
+                  </td>
+                  <td>01-10-2021</td>
+                  <td><span class="status completed">Completed</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="todo">
+            <div class="head">
+              <h3>Todos</h3>
+              <i class="bx bx-plus"></i>
+              <i class="bx bx-filter"></i>
+            </div>
+            <ul class="todo-list">
+              <li class="completed">
+                <p>Todo List</p>
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </li>
+              <li class="completed">
+                <p>Todo List</p>
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </li>
+              <li class="not-completed">
+                <p>Todo List</p>
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </li>
+              <li class="completed">
+                <p>Todo List</p>
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </li>
+              <li class="not-completed">
+                <p>Todo List</p>
+                <i class="bx bx-dots-vertical-rounded"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
+      <!--            IFRAME CARGANDO MODULOS-->
+
+      <!-- <div class="dash-content">
+        <main>
+        <iframe name="myFrame" id="myFrame" frameborder="0"></iframe>
+      </main>
+      </div> -->
+      <!-- MAIN -->
+    </section>
+
+    <!-- CONTENT -->
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
